@@ -1,7 +1,12 @@
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
+}
+
 module.exports = {
   nextConfig,
   env: {
-    "BASE_URL": "https://next-ppdb.herokuapp.com",
+    "BASE_URL": "http://localhost:3000",
     "MONGO_URL": "mongodb+srv://admin:admin@cluster0.rtcgt.mongodb.net/db_ppdb?retryWrites=true&w=majority",
     "ACCESS_TOKEN": "gerena123456",
     "REFRESH_TOKEN": "gerena121345689",
