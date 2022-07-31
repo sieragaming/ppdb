@@ -1,6 +1,5 @@
-const ACTIONS = {
+export const ACTIONS = {
   NOTIFY: 'NOTIFY',
   AUTH: 'AUTH'
 }
 
-export default ACTIONS

@@ -1,11 +1,12 @@
 import Head from "next/head"
 import Link from "next/link"
+import MainLayout from "../components/MainLayout"
 import { useState, useContext, useEffect } from "react"
 import { DataContext } from "../store/GlobalState"
 import { postData } from "../utils/fetchData"
 import Cookie from "js-cookie"
 import { useRouter } from "next/router"
-import MainLayout from "../components/MainLayout"
+
 
 const Login = () => {
     const initialState = { email: '', password: '' }
@@ -17,13 +18,13 @@ const Login = () => {
 
     const router = useRouter()
 
-    const handleChangeInput = e => {
+    const handleChangeInput = (e) => {
         const { name, value } = e.target
         setUserData({ ...userData, [name]: value })
         dispatch({ type: 'NOTIFY', payload: {} })
     }
 
-    const handleSubmit = async e => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         dispatch({ type: 'NOTIFY', payload: { loading: true } })

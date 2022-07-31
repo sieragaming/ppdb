@@ -18,7 +18,17 @@ export default async (req, res) => {
 
     const access_token = createAccessToken({ id: user._id })
 
-    res.json({ msg: "Login Berhasil", access_token, user: { username: user.username, email: user.email, role: user.role, avatar: user.avatar, root: user.root } })
+    res.json({
+      msg: "Login Berhasil",
+      access_token,
+      user: {
+        username: user.username,
+        email: user.email,
+        role: user.role,
+        avatar: user.avatar,
+        root: user.root
+      }
+    })
   } catch (error) {
     return res.status(500).json({ err: error.message })
   }
