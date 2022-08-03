@@ -20,7 +20,7 @@ function Navbar() {
                 <Link href="/">
                     <a className="navbar-brand text-uppercase align-middle " style={{ fontWeight: "bold", fontSize: "18pt" }}>
                         <img src="/image/logo1.png" alt="" width="50" height="50" className=" me-2" />
-                        Yayasan Saddam Al-Abror
+                        MTS Saddam Al-Abror
                     </a>
                 </Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
